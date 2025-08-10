@@ -20,7 +20,7 @@ st.write(
 #    ('Banana', 'Strawberries', 'Peaches'))
 
 #st.write('Your favorite fruit is:', option)
-cnx = st.container("snowflake")
+cnx = st.connection("snowflake")
 session = cnx.secssion()
 #session = get_active_session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
