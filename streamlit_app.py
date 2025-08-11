@@ -37,7 +37,7 @@ if ingredients_list:
     
     ingredients_string = ''    
 for fruit_chosen in ingredients_list:
-    ingredients_string += fruit_chosen + ' '  #+= operator means "add this to what is already in the variable" 
+    ingredients_string += fruit_chosen + ' '  # += operator means "add this to what is already in the variable" 
 #    st.write(ingredients_string)
 
 my_insert_stmt = """ insert into smoothies.public.orders(ingredients)
@@ -55,4 +55,4 @@ if time_to_insert:
 import requests
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
 #st.text(smoothiefroot_response.json())
-sf_df = st.dataframe(data = smoothiefroot_response.json(),user_container_width=True)
+sf_df = st.dataframe(data = smoothiefroot_response.json(),use_container_width=True)
