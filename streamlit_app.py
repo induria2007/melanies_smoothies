@@ -36,7 +36,7 @@ if ingredients_list:
   #  st.write(ingredients_list)
  #   st.text(ingredients_list)
     
-ingredients_string = ''    
+  ingredients_string = ''    
   for fruit_chosen in ingredients_list:
     ingredients_string += fruit_chosen + ' '  # += operator means "add this to what is already in the variable" 
     smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
